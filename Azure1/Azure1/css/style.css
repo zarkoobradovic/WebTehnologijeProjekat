@@ -332,7 +332,7 @@ body.dark{
  
  */
 .section-padding{
-    padding: 80px 0;
+    padding: 100px 0;
 
 }
 .section-title{
@@ -349,27 +349,10 @@ body.dark{
 .section-title h2 >spna{
     color: var(--color-4);
 }
-
-
-.features .prvi{
-    font-size: 50px;
-    color:var(--color-4);
-}
-.features .drugi{
-    font-size: 50px;
-    color:var(--color-4);
-}
-.features .treci{
-    font-size: 50px;
-    color:var(--color-4);
-}
-.features .cetvrti{
-    font-size: 50px;
-    color:var(--color-4);
+.features a{
+    background-color: var(--color-4);
 }
 .features p{
-    font-size: 14px;
+    min-height: 120px;
 }
-.features h4{
-    font-size: 16px;
-}
+

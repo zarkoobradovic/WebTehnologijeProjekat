@@ -194,7 +194,7 @@
                                     korisnicima pokretanje virtuelnih mašina Majkrosoft Vindovs i Linuks opšte namene,
                                     kao i unapred konfigurisane slike mašina za popularne softverske pakete.
                                 </p>
-                                <button type="button" class="btn btn-primary" data-toggle="collapse"
+                                <button type="button" class="btn btn-primary m-0" data-toggle="collapse"
                                     data-target="#content">Pročitajte vise</button>
 
                                 <div class="collapse" id="content">
@@ -373,19 +373,19 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <h2>Microsoft Azure <spna>Dizajn</spna>
+                        <h2>Microsoft Azure <spna>dizajn</spna>
                         </h2>
                     </div>
                 </div>
             </div>
             <div class="container">
 
-                <div class="row d-none d-md-inline-flex">
+                <div class="row d-none d-lg-inline-flex">
                     <div class="col-lg-4">
                         <div class="list-group" id="list-tab" role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-Racunarski-servisi-list1"
                                 data-toggle="list" href="#list-Racunarski-servisi-list" role="tab"
-                                aria-controls="home">Microsoft Azure OS</a>
+                                aria-controls="home"">Microsoft Azure OS</a>
                             <a class="list-group-item list-group-item-action" id="list-Memoriski-servisi-list"
                                 data-toggle="list" href="#list-memoriski-servisi" role="tab"
                                 aria-controls="profile">Microsoft Azure Fabric Controller</a>
@@ -418,7 +418,7 @@
                                         Azure Hypervisor za pružanje virtuelizacije usluga.
                                     </p>
 
-                                    <img style="height: 400px; width: 680px;" src="./slike/Microsoft_Cloud_OS.png"
+                                    <img class="img-fluid" src="./slike/Microsoft_Cloud_OS.png"
                                         alt="">
 
                                 </div>
@@ -435,7 +435,7 @@
 
                                 </p>
                                 <img src="./slike/Microsoft Azure Fabric Controller2.png"
-                                    style="height: 350px; width: 700px;" alt="">
+                                    class="img-fluid" alt="">
                             </div>
 
                             <div class="tab-pane fade" id="list-mobilni-servisi" role="tabpanel"
@@ -468,78 +468,38 @@
                                 <img src="./slike/msPortal.png" style="width: 700px;" alt="">
                             </div>
 
-
-
-                            <div class="tab-pane fade" id="list-Razmena-poruka" role="tabpanel"
-                                aria-labelledby="list-Razmena-poruka-list">
-                                <p class="text-justify">
-                                    Azure Service Bus omogućava aplikacijama pokrenutim u Azureovim prostorijama ili na
-                                    drugim uređajima da komuniciraju sa Azureom. Ovo pomaže u izgradnji skalabilnih i
-                                    pouzdanih aplikacija u uslužno orijentisanoj arhitekturi (SOA).
-                                    Azure servisna magistrala podržava četiri različite vrste komunikacionih mehanizama:
-
-
-
-
-                                </p>
-
-                                <p> 1. Event Hubs,</p>
-                                <p>2. Queues,</p>
-                                <p> 3. Topics,</p>
-                                <p> 4. Relays</p>
-
-                            </div>
-                            <div class="tab-pane fade" id="CDN" role="tabpanel" aria-labelledby="list-CDN-list">
-                                <p class="text-justify">
-                                    Globalna mreža za isporuku sadržaja (CDN) za audio, video, aplikacije, slike i druge
-                                    statičke datoteke. Može se koristiti za keširanje statičke imovine veb lokacija
-                                    geografski bliže korisnicima radi povećanja performansi.
-                                    Mrežom može da upravlja HTTP API zasnovan na REST-u. Azur ima 94 lokacije
-                                    prisutnosti širom sveta (poznate i kao Edge lokacije) od aprila 2020.
-
-
-                                </p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
 
 
                 <div class="row d-lg-none d-block d-md-block">
-                    <div id="accordion" style="width: 100%;">
+                    <div id="accordion">
                         <div class="card">
                             <div class="card-header" id="headingOne">
-                                <h5 class="mb-0 text-center">
-                                    <button class="btn btn-link btn-block" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Računarski servisi
-                                    </button>
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                  </button>
                                 </h5>
-                            </div>
+                              </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     <p class="text-justify">
-                                        Virtuelne mašine, infrastruktura kao usluga (IaaS) koja omogućava korisnicima
-                                        pokretanje virtuelnih mašina Majkrosoft Vindovs i Linuks opšte namene, kao i
-                                        unapred konfigurisane slike mašina za popularne softverske pakete. Većina
-                                        korisnika koristi Linuks na Azureu, neke od mnogih ponuđenih Linuks
-                                        distribucija, uključujući Majkrosoftovu sopstvenu Azure Sphere zasnovanu na
-                                        Linuksu. Usluge aplikacija, okruženje platforme kao usluge (PaaS) omogućava
-                                        programerima lako objavljivanje i upravljanje veb lokacijama. Veb lokacije,
-                                        Azure veb lokacije omogućavaju programerima da grade veb lokacije koristeći
-                                        ASP.NET, PHP, Node.js ili Pajton i mogu se primeniti pomoću FTP, Git, Merkurial,
-                                        Tim Foundacijski Server ili otpremiti putem korisničkog portala. Ova funkcija je
-                                        najavljena u obliku pregleda u junu 2012. godine na sastanku Meet Majkrosoft
-                                        Azur. Kupci mogu da kreiraju veb lokacije u PHP-u, ASP.NET-u, Node.js-u ili
-                                        Pajtonu ili da izaberu nekoliko aplikacija otvorenog koda iz galerije za
-                                        primenu. Ovo uključuje jedan aspekt ponude platforme kao usluge (PaaS) za
-                                        platformu Majkrosoft Azur. Preimenovan je u Veb Aps u aprilu 2015. Veb Poslovi,
-                                        aplikacije koje se mogu primeniti u okruženje usluge aplikacija za primenu
-                                        pozadinske obrade koja se može pozivati po rasporedu, na zahtev ili se
-                                        neprekidno pokretati. Usluge The Blob, Table i Queue mogu se koristiti za
-                                        komunikaciju između Veb Aplikacija i Veb Poslova i za pružanje stanja.
+                                        Microsoft Azure koristi specijalizovani operativni sistem, nazvan Microsoft
+                                        Azure,
+                                        za pokretanje svog „sloja“. Klaster hostovan u Majkrosoftovim centrima podataka
+                                        koji
+                                        upravljaju računarstvom i resursima za skladištenje računara i obezbeđuje
+                                        resurse
+                                        (ili njihov podskup) aplikacijama pokrenutim na vrhu Microsoft Azure-a.
+                                        Microsoft
+                                        Azure je opisan kao „oblačni sloj“ povrh brojnih sistema Vindovs Server, koji
+                                        koriste Vindovs Server 2008 i prilagođenu verziju Hiper-V, poznatu kao Microsoft
+                                        Azure Hypervisor za pružanje virtuelizacije usluga.
                                     </p>
                                 </div>
                             </div>
@@ -547,7 +507,7 @@
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0 text-center">
-                                    <button class="btn btn-link  collapsed" data-toggle="collapse"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Memoriski servisi
                                     </button>
@@ -557,16 +517,14 @@
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     <p class="text-justify">
-                                        Usluge skladištenja pružaju REST i SDK API-je za čuvanje i pristup podacima u
-                                        oblaku. Usluga tabela omogućava programima da skladište strukturirani tekst u
-                                        particioniranim kolekcijama entiteta kojima se pristupa particijskim ključem i
-                                        primarnim ključem. Azure Tabela usluga je NoSql nerelaciona baza podataka. Blob
-                                        usluga omogućava programima da skladište nestrukturirani tekst i binarne podatke
-                                        kao blobove kojima se može pristupiti HTTP (S) putanjom. Blob usluga takođe
-                                        pruža sigurnosne mehanizme za kontrolu pristupa podacima. Usluga čekanja
-                                        omogućava programima da asinhrono komuniciraju porukom koristeći redove.
-
+                                        Skaliranjem i pouzdanošću kontroliše Microsoft Azure Fabric Controller-a, koji
+                                        osigurava da usluge i okruženje ne propadnu ako jedan ili više servera otkaže u
+                                        Majkrosoftovom centru podataka, a koji takođe omogućava upravljanje korisnikovom veb
+                                        aplikacijom, kao što je dodeljivanje memorije i balansiranje opterećenja.
+    
                                     </p>
+                                    <img src="./slike/Microsoft Azure Fabric Controller2.png"
+                                      class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
@@ -584,12 +542,12 @@
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     <p class="text-justify">
-                                        Mobile Engagement collects prikuplja analitiku u stvarnom vremenu koja ističe
-                                        ponašanje korisnika. Takođe pruža push obaveštenja za mobilne uređaje. HockeyApp
-                                        se može koristiti za razvoj, distribuciju i beta testiranje mobilnih aplikacija
-
+                                        Azur pruža API izgrađen na REST-u, HTTP-u i XML-u koji programeru omogućava
+                                        interakciju sa uslugama koje pruža Microsoft Azure. Majkrosoft takođe nudi
+                                        klijentsku biblioteku klasa kojom se objedinjuju funkcije interakcije sa uslugama.
+                                        Takođe se integriše sa Microsoft Visual Studio, Git, and Eclipse.
                                     </p>
-                                </div>
+                                 </div>
                             </div>
                         </div>
                     </div>

@@ -31,6 +31,7 @@ body.dark{
    --body-color:var(--color-400);
     --background-color: var(--black-alpha-100);
    --color-000:var(--black-900);
+   --black-900:var(--color-000);
    
    --bg-dark:var(--body-color);
    
@@ -359,3 +360,30 @@ body.dark{
 
 /*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
 
+
+/*
+Sekcija dizajn
+*/
+#dizajn .list-group .list-group-item{
+    background-color:var(--color-000);
+    color: var(--black-900);
+    margin-bottom: 10px;
+    width: 100%;
+}
+#dizajn .card{
+    width: 100%;
+    background-color:var(--color-000);
+    
+    margin-top: 10px;
+}
+
+#dizajn  .card button{
+    float: left;
+    font-size: 16px;
+    margin-top: 0;
+    position: relative;
+    left:24px;
+    top:2px;
+    font-weight: 900;
+    color:var(--black-900);
+}

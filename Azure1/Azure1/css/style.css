@@ -1,0 +1,375 @@
+
+/*font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --body-color: #f8f9fa;
+    --color-1:#e91e63;
+    --color-2:#f5ae10;
+    --color-3:#09d69c;
+    --color-4:#2a5ee8;
+    --bg-dark:#2b2c2f;
+    --black-900:#000000;
+    --color-400:#555555;
+    --color-100:#f7f7f7f7;
+    --color-000:#ffffffff;
+    --black-alpha-100:rgba(0,0,0,0.05);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: var(--body-color);
+    line-height: 1.5;
+
+}
+body.dark{
+   --body-color:var(--color-400);
+    --background-color: var(--black-alpha-100);
+   --color-000:var(--black-900);
+   
+   --bg-dark:var(--body-color);
+   
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    outline: none i !important;
+}
+@keyframes video_play_aniation{
+    0%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255,255,255,0);
+
+    }
+    100%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
+/*animcija da se vrti tockic */
+@keyframes okreci_tockic{
+    0%{
+         transform: rotate(0deg);
+    }
+    100%{
+     transform: rotate(360deg);
+    }
+}
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-wrap .effect-1{
+   left: 20%;
+   top:20%;
+   font-size: 20px;
+   color:var(--color-2);
+   animation: okreci_tockic 5s linear infinite;
+
+}
+.effect-wrap .effect-2{
+    right: 5%;
+    top:10%;
+    font-size: 25px;
+    color:var(--black-900);
+    animation: okreci_tockic 7s linear infinite;
+}
+.effect-wrap .effect-3{
+    left: 5%;
+    bottom:10%;
+    font-size: 25px;
+    color:var(--color-3);
+    animation: okreci_tockic 7s linear infinite;
+}
+.btn-prvo{
+    background-color:var(--color-4);
+    padding: 12px 36px;
+    border: none;
+    border-radius: 36px;
+    color: var(--body-color); 
+    font-size: 16px;
+    text-transform:capitalize ;
+    transform: all 0.5s ease;
+    font-weight: 500;
+  
+}
+
+.btn-prvo:hover{
+    color:var(--black-900);
+    background-color:var(--body-color);
+
+}
+/*Navbar*/
+.navbar{
+    background-color:var(--color-4);
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.navbar-shrink{
+    
+    background-color:var(--color-4);
+    padding: 10px 0;
+}
+.navbar > .container{
+    padding:0 15px;
+}
+.navbar-brand{
+    font-size: 30px;
+    color:var(--color-000);
+   font-weight: 500;
+    text-transform: capitalize;
+}
+.navbar .nav-item{
+    margin-left: 40px;
+}
+.navbar .nav-item .nav-link{
+  color: var(--color-000);
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0;
+  position: relative;
+}
+/*Za crticu da ispisuje u navbaru sa tranzicijom*/
+.navbar .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    right:0;
+    height: 1px;
+    background-color: var(--color-000);
+    transition: all 0.5s ease;
+    transform: scale(0);
+ 
+}
+.navbar .nav-item .nav-link .active::before{
+   
+    transform: scale(1);
+}
+.navbar .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+
+
+.home{
+    min-height: 100vh;
+    padding: 150px 0;
+    background: var(--body-color);
+    border-radius: 0 0 200px 0;
+    /*kada se podesava tockic*/
+    position: relative;
+    z-index: 1;
+   
+}
+.home-text h1{
+    font-size: 45px;
+    font-weight: 700;
+    color:var(--black-900);
+    margin: 0 0 20px;
+}
+.home-text h1 > span{
+    color:var(--color-4);
+}
+.home-text p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+
+}
+.home .home-btn{
+   margin-top:40px;
+}
+
+/*dugme za video*/
+.home .home-btn .video-play-btn{
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    font-size: 16px;
+  animation: video_play_aniation 2s ease infinite;
+
+}
+.home .home-btn .video-play-btn i{
+    line-height: 50px;
+}
+.home .home-btn .video-play-btn:hover{
+    animation: none;
+    box-shadow: var(--black-900);
+}
+.home-img img{
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+ }
+ .home-img{
+     position: relative;
+ }
+ .home-img .circle{
+     position: absolute;
+     z-index: 1;
+     height: 400px;
+     width: 400px;
+     border: 1px solid var(--body-color);
+     border-radius: 50%;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+
+ }
+ .home-img .circle::before{
+     
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background:blue;
+    border-radius: 50%;
+    left:25px;
+    top:30px;
+    transform-origin: 170px 170px;
+     animation:okreci_tockic 10s linear infinite;
+ }
+
+ 
+
+ /*light-dark*/
+  .toggle-theme{
+     position:fixed;
+     right: 0;
+     top:50%;
+     height:40px;
+     width: 40px;
+     background-color:#000000;
+     z-index: 1200;
+     color: #ffffffff;
+     cursor: pointer;
+     border-radius: 50%;
+     box-shadow:#ffffffff;
+     font-size:16px;
+     text-align: center;
+ }
+ .toggle-theme i{
+  line-height: 40px;
+
+ }
+
+ /*video
+ */
+ .video-popup{
+     padding: 30px;
+     position: fixed;
+     left:0;
+     top:0;
+     width: 100%;
+     height: 100%;
+     z-index: 1999;
+     background-color: rgba(0,0,0,0.7);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity:0;
+     visibility: hidden;
+     transition: all 0.5s ease;
+
+ }
+ .video-popup.open{
+     opacity: 1;
+     visibility: visible;
+ }
+ .video-popup-inner{
+     width: 100%;
+     max-width: 900px;
+     background-color: red;
+     position: relative;
+
+ }
+ .video-popup .video-popup-close{
+     position: absolute;
+     right: 0;
+     top:-30px;
+     height: 30px;
+     width: 30px;
+     background-color: red;
+     font-size:16px;
+     text-align: center;
+     line-height: 30px;
+     cursor: pointer;
+     color:#ffffffff;
+
+
+ }
+ .video-popup .iframe-box{
+     height: 0;
+     overflow-x:hidden;
+     padding-top: 56.25%;
+
+ }
+ .video-popup #player-1{
+     position:absolute;
+     left: 0;
+     top:0;
+     width: 100%;
+     height: 100%;
+     border:0;
+
+ }
+
+
+ /*
+ 
+ */
+.section-padding{
+    padding: 80px 0;
+
+}
+.section-title{
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 40px;
+    color:var(--black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.section-title h2 >spna{
+    color: var(--color-4);
+}
+
+
+.features .prvi{
+    font-size: 50px;
+    color:var(--color-4);
+}
+.features .drugi{
+    font-size: 50px;
+    color:var(--color-4);
+}
+.features .treci{
+    font-size: 50px;
+    color:var(--color-4);
+}
+.features .cetvrti{
+    font-size: 50px;
+    color:var(--color-4);
+}
+.features p{
+    font-size: 14px;
+}
+.features h4{
+    font-size: 16px;
+}

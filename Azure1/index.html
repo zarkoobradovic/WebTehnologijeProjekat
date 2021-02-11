@@ -369,138 +369,560 @@
 
     <!--=======================================Sekcija Dizajn========================================-->
     <section id="dizajn" class="section-padding ">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <h2>Microsoft Azure <spna>dizajn</spna>
+                        <h2>Microsoft Azure <spna></spna>
                         </h2>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
 
-                <div class="row d-none d-lg-inline-flex">
-                    <div class="col-lg-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-Racunarski-servisi-list1"
-                                data-toggle="list" href="#list-Racunarski-servisi-list" role="tab"
-                                aria-controls="home"">Microsoft Azure OS</a>
-                            <a class="list-group-item list-group-item-action" id="list-Memoriski-servisi-list"
-                                data-toggle="list" href="#list-memoriski-servisi" role="tab"
-                                aria-controls="profile">Microsoft Azure Fabric Controller</a>
-                            <a class="list-group-item list-group-item-action" id="list-list-mobilni-servisi-list"
-                                data-toggle="list" href="#list-mobilni-servisi" role="tab"
-                                aria-controls="messages">Integracija</a>
-                            <a class="list-group-item list-group-item-action" id="list-Upravljanje-podacima-list"
-                                data-toggle="list" href="#list-Upravljanje-podacima" role="tab"
-                                aria-controls="settings">Azure Portal</a>
-                            
+                <div class="row promena">
+
+                    <div class="col-lg-3">
+                        <h4 class="text-left"><span>Azure</span> proizvodi</h4>
+                        <div class="list-group" id="list-tab" role="tablist" style="width: 100%;">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-toggle="list" href="#list-home" role="tab" aria-controls="home">Popularni</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                href="#list-profile" role="tab" aria-controls="profile">Ostali</a>
+                            <h4 class="text-left"><span>Azure</span> rešenja</h4>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="#list-messages" role="tab" aria-controls="messages">Rešenja</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="#list-settings" role="tab" aria-controls="settings">Settings</a>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+
+
+
+
+
+                    <div class="col-lg-9">
+                        <!-------------------Popularni---------------------------------->
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-Racunarski-servisi-list" role="tabpanel"
-                                aria-labelledby="list-Racunarski-servisi-list1">
-                                <div class="container">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Virtelna mešina</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/VM.png" alt="Card image cap">
 
-                                    <p class="text-justify">
-                                        Microsoft Azure koristi specijalizovani operativni sistem, nazvan Microsoft
-                                        Azure,
-                                        za pokretanje svog „sloja“. Klaster hostovan u Majkrosoftovim centrima podataka
-                                        koji
-                                        upravljaju računarstvom i resursima za skladištenje računara i obezbeđuje
-                                        resurse
-                                        (ili njihov podskup) aplikacijama pokrenutim na vrhu Microsoft Azure-a.
-                                        Microsoft
-                                        Azure je opisan kao „oblačni sloj“ povrh brojnih sistema Vindovs Server, koji
-                                        koriste Vindovs Server 2008 i prilagođenu verziju Hiper-V, poznatu kao Microsoft
-                                        Azure Hypervisor za pružanje virtuelizacije usluga.
-                                    </p>
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
 
-                                    <img class="img-fluid" src="./slike/Microsoft_Cloud_OS.png"
-                                        alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Aplikacioni servisi</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/app-services.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">SQL</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/sql.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Smeštanje</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/storage.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Cloud servisi</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/cloud-servisi.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Rezerna kopija</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/backup.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Mašinsko učenje</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/masinsko-ucenje.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">IoT</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/internet-of-things.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!------------------------------Ostali-------------------------->
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list">
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">HDInsight</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/slon.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Autentifikacija</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/authentication.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Domen</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/domen.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">DNS</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/dns.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Medija</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/social-media.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Visual Studio Times</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/visual-studio.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Logične aplikacije</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/Proizvodi/logik-app.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card justify-content-center">
+                                            <h5 class="text-center mt-3">Azure Dev Test</h5>
+                                            <p class="text-center mt-3">
+                                                <img src="./img/AzureResenja/testing.png" alt="Card image cap">
+
+                                            </p>
+                                            <a href="" class="text-right p-3"> Više
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
 
                                 </div>
 
 
-                            </div>
-                            <div class="tab-pane fade" id="list-memoriski-servisi" role="tabpanel"
-                                aria-labelledby="list-Memoriski-servisi-list">
-                                <p class="text-justify">
-                                    Skaliranjem i pouzdanošću kontroliše Microsoft Azure Fabric Controller-a, koji
-                                    osigurava da usluge i okruženje ne propadnu ako jedan ili više servera otkaže u
-                                    Majkrosoftovom centru podataka, a koji takođe omogućava upravljanje korisnikovom veb
-                                    aplikacijom, kao što je dodeljivanje memorije i balansiranje opterećenja.
 
-                                </p>
-                                <img src="./slike/Microsoft Azure Fabric Controller2.png"
-                                    class="img-fluid" alt="">
-                            </div>
-
-                            <div class="tab-pane fade" id="list-mobilni-servisi" role="tabpanel"
-                                aria-labelledby="list-list-mobilni-servisi-list">
-                                <p class="text-justify">
-                                    Azur pruža API izgrađen na REST-u, HTTP-u i XML-u koji programeru omogućava
-                                    interakciju sa uslugama koje pruža Microsoft Azure. Majkrosoft takođe nudi
-                                    klijentsku biblioteku klasa kojom se objedinjuju funkcije interakcije sa uslugama.
-                                    Takođe se integriše sa Microsoft Visual Studio, Git, and Eclipse.
-                                </p>
-
-                                <img src="./slike/vs.png"
-                                    style="height: 150px; width: 150px; margin-right: 15%; margin-left: 3%;" alt="">
-
-                                <img src="./slike/Git.png" style="height: 150px; width: 150px; margin-right: 15%;"
-                                    alt="">
-
-                                <img src="./slike/eclipse-logo.png" style="height: 150px; width: 150px;" alt="">
 
                             </div>
-                            <div class="tab-pane fade" id="list-Upravljanje-podacima" role="tabpanel"
-                                aria-labelledby="list-Upravljanje-podacima-list">
-                                <p class="text-justify">
-                                    Pored interakcije sa uslugama putem API-ja, korisnici mogu da upravljaju Azur
-                                    uslugama i pomoću veb portala Azur, koji je opštu dostupnost dostigao u decembru
-                                    2015. Portal omogućava korisnicima da pretražuju aktivne resurse, menjaju postavke,
-                                    pokreću nove resurse i pregledaju osnovne podatke o nadgledanju sa aktivnih
-                                    virtuelnih mašina i usluga.
-                                </p>
-                                <img src="./slike/msPortal.png" style="width: 700px;" alt="">
-                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">
 
-                            
+
+                            <!--=======================Azure resenja================================-->
+                                 
+                                      <div class="row">
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Digitalni marketing</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/bullhorn.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Mobilni</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/smartphone.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">E-commerc</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/e-comerce.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Pslovna inteligencija</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/biznis.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">IoT</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/analytics.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Big Data</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/big-database.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Development Test</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/testing.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Daljinski nadzor</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/remote-control.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                      </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">...</div>
                         </div>
                     </div>
+
+
+
+
+
+
+
                 </div>
+
+
+
+
+
+
+
 
 
                 <div class="row d-lg-none d-block d-md-block">
                     <div id="accordion">
+                        <h4>Azure proizvodi</h4>
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
-                                  </button>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Popularni
+                                    </button>
                                 </h5>
-                              </div>
+                            </div>
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="text-justify">
-                                        Microsoft Azure koristi specijalizovani operativni sistem, nazvan Microsoft
-                                        Azure,
-                                        za pokretanje svog „sloja“. Klaster hostovan u Majkrosoftovim centrima podataka
-                                        koji
-                                        upravljaju računarstvom i resursima za skladištenje računara i obezbeđuje
-                                        resurse
-                                        (ili njihov podskup) aplikacijama pokrenutim na vrhu Microsoft Azure-a.
-                                        Microsoft
-                                        Azure je opisan kao „oblačni sloj“ povrh brojnih sistema Vindovs Server, koji
-                                        koriste Vindovs Server 2008 i prilagođenu verziju Hiper-V, poznatu kao Microsoft
-                                        Azure Hypervisor za pružanje virtuelizacije usluga.
-                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Virtelna mešina</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/VM.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Aplikacioni servisi</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/app-services.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">SQL</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/sql.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Smeštanje</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/storage.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Cloud servisi</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/cloud-servisi.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Rezerna kopija</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/backup.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Mašinsko učenje</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/masinsko-ucenje.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">IoT</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/internet-of-things.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -509,45 +931,266 @@
                                 <h5 class="mb-0 text-center">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Memoriski servisi
+                                       Ostali
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="text-justify">
-                                        Skaliranjem i pouzdanošću kontroliše Microsoft Azure Fabric Controller-a, koji
-                                        osigurava da usluge i okruženje ne propadnu ako jedan ili više servera otkaže u
-                                        Majkrosoftovom centru podataka, a koji takođe omogućava upravljanje korisnikovom veb
-                                        aplikacijom, kao što je dodeljivanje memorije i balansiranje opterećenja.
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">HDInsight</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/slon.png" alt="Card image cap">
     
-                                    </p>
-                                    <img src="./slike/Microsoft Azure Fabric Controller2.png"
-                                      class="img-fluid" alt="">
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Autentifikacija</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/authentication.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Domen</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/domen.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">DNS</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/dns.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Medija</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/social-media.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Visual Studio</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/visual-studio.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Logične aplikacije</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/Proizvodi/logik-app.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Azure Dev Test</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/testing.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
+                        <h4 class="pt-3">Azure rešenja</h4>
                         <div class="card">
+                           
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0 text-center">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Mobilni servisi
+                                        Rešenja
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="text-justify">
-                                        Azur pruža API izgrađen na REST-u, HTTP-u i XML-u koji programeru omogućava
-                                        interakciju sa uslugama koje pruža Microsoft Azure. Majkrosoft takođe nudi
-                                        klijentsku biblioteku klasa kojom se objedinjuju funkcije interakcije sa uslugama.
-                                        Takođe se integriše sa Microsoft Visual Studio, Git, and Eclipse.
-                                    </p>
-                                 </div>
+
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Digitalni marketing</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/bullhorn.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Mobilni</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/smartphone.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">E-commerc</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/e-comerce.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Pslovna inteligencija</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/biznis.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">IoT</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/analytics.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Big Data</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/big-database.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Development Test</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/testing.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="card justify-content-center">
+                                                <h5 class="text-center mt-3">Daljinski nadzor</h5>
+                                                <p class="text-center mt-3">
+                                                    <img src="./img/AzureResenja/remote-control.png" alt="Card image cap">
+    
+                                                </p>
+                                                <a href="" class="text-right p-3"> Više
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+    
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
                             </div>
                         </div>
                     </div>

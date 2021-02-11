@@ -406,10 +406,18 @@ body.dark{
 Sekcija dizajn
 */
 #dizajn .list-group .list-group-item{
-    background-color:var(--color-000);
+    background-color:var(--body-color);
     color: var(--black-900);
     margin-bottom: 10px;
     width: 100%;
+}
+#dizajn .promena  h4{
+    font-weight: 700;
+
+}
+#dizajn .promena  span{
+    color:#2a5ee8;
+    
 }
 #dizajn .card{
     width: 100%;
@@ -428,3 +436,18 @@ Sekcija dizajn
     font-weight: 900;
     color:var(--black-900);
 }
+
+
+
+
+
+@media (max-width: 992px) { 
+    #dizajn .promena{
+        display: none;
+        
+    }
+    #dizajn  h5{
+        font-size:16px
+
+    }
+ }

@@ -359,7 +359,48 @@ body.dark{
 }
 
 /*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
-
+.img-text{
+    width: 100%;
+    height: 420px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #2a5ee8;
+    color: #fff;
+    border-radius: 5%;
+}
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+.img-area {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+.img-area img {
+    width: 100%;
+}
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -30px;
+}
+.carousel-indicators li {
+    background: #657ec2;
+    border-radius: 15%;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active {
+    background: #2a5ee8;
+}
+/*-----------------------End Microsoft Azure Servisi Sekcija---------------------------*/
 
 /*
 Sekcija dizajn

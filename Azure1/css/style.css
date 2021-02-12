@@ -335,7 +335,7 @@ body.dark{
 /*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
 .img-text{
     width: 100%;
-    height: 420px;
+    height: 440px;
     display: block;
     text-align: center;
     padding: 40% 5%;
@@ -354,7 +354,7 @@ body.dark{
     
     overflow: hidden;
     top: 15px;
-    left: 125px;
+    left: 35%;
     border-radius: 0%;
 }
 .img-area img {

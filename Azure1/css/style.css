@@ -218,32 +218,6 @@ body.dark{
  .home-img{
      position: relative;
  }
- .home-img .circle{
-     position: absolute;
-     z-index: 1;
-     height: 400px;
-     width: 400px;
-     border: 1px solid var(--body-color);
-     border-radius: 50%;
-     top:50%;
-     left:50%;
-     transform: translate(-50%,-50%);
-
- }
- .home-img .circle::before{
-     
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background:blue;
-    border-radius: 50%;
-    left:25px;
-    top:30px;
-    transform-origin: 170px 170px;
-     animation:okreci_tockic 10s linear infinite;
- }
-
  
 
  /*light-dark*/
@@ -448,6 +422,15 @@ Sekcija dizajn
     }
     #dizajn  h5{
         font-size:16px
+
+    }
+    #dizajn h4{
+        font-weight: 700;
+        
+    }
+    #dizajn span{
+        
+        color:var(--color-4);
 
     }
  }

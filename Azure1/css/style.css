@@ -122,6 +122,11 @@ body.dark{
     background-color:var(--color-4);
     padding: 10px 0;
 }
+.navbar.navbar-shrink .navbar-brand img{
+    width: 43px;
+    height: 43px;
+
+}
 .navbar > .container{
     padding:0 15px;
 }
@@ -378,30 +383,30 @@ body.dark{
 /*-------------------------------End Microsoft Azure Servisi Sekcija---------------------------------------*/
 
 /*
-Sekcija dizajn
+=====================================Sekcija proizvodi i resenja================================================
 */
-#dizajn .list-group .list-group-item{
+#proizvodi .list-group .list-group-item{
     background-color:var(--body-color);
     color: var(--black-900);
     margin-bottom: 10px;
     width: 100%;
 }
-#dizajn .promena  h4{
+#proizvodi .promena  h4{
     font-weight: 700;
 
 }
-#dizajn .promena  span{
+#proizvodi .promena  span{
     color:#2a5ee8;
     
 }
-#dizajn .card{
+#proizvodi .card{
     width: 100%;
     background-color:var(--color-000);
     
     margin-top: 10px;
 }
 
-#dizajn  .card button{
+#proizvodi  .card button{
     float: left;
     font-size: 16px;
     margin-top: 0;
@@ -414,24 +419,27 @@ Sekcija dizajn
 
 
 @media (max-width: 992px) { 
-    #dizajn .promena{
+    #proizvodi .promena{
         display: none;
         
     }
-    #dizajn  h5{
+    #proizvodi  h5{
         font-size:16px
 
     }
-    #dizajn h4{
+    #proizvodi h4{
         font-weight: 700;
         
     }
-    #dizajn span{
+    #proizvodi span{
         
         color:var(--color-4);
 
     }
  }
+/* =============================Kraj sekcije proizvodi i resenja===================================================*/
+
+
 
  /*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
  body{
@@ -687,3 +695,26 @@ Sekcija dizajn
     }
 }
  /*-----------------------End Microsoft Azure Servisi Istorija---------------------------*/
+
+
+
+ /*===============================Sekcija dizajn==============================*/
+ #dizajn h3{
+     
+     font-size: 20px;
+     font-weight:500;
+ }
+ #dizajn .card-header{
+     background-color:var(--body-color);
+ }
+ #dizajn .card-header button{
+     color:var(--black-900);
+ }
+
+#dizajn .card{
+    border: none;
+   
+}
+#dizajn .card-body{
+    background-color: var(--body-color);
+}

@@ -1,0 +1,163 @@
+/*=====================================Responsive=================================================*/
+
+
+@media(max-width:991px){
+    .navbar-toggler{
+        background-color: var(--dark-color);
+      
+        height: 34px;
+        width: 44px;
+        padding: 0;
+        font-size: 17px;
+       color:#000000;
+
+
+    }
+    .navbar-nav{
+        background-color: var(--dark-color);
+
+    }
+    .navbar .nav-item{
+        margin: 0;
+        padding: 5px;
+    }
+    .navbar.navbar-shrink  .navbar-toggler,
+    .navbar.navbar-shrink .navbar-nav{
+        background-color: var(--color-4);
+        color: #fff;
+    }
+    .home-text h1{
+       font-size: 40px;
+
+    }
+    #proizvodi .promena  h4{
+        font-size: 16px;
+ 
+     }
+    #servisi .carousel-item p{
+        font-size: 14px;
+    }
+    #servisi .carousel-item h2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    #servisi .carousel-item .img-area{
+        width: 64px;
+        height: 64px;
+    }
+    #dizajn .card-header button{
+      
+       
+        text-align: left;
+        font-size: 16px;
+    }
+}
+@media(max-width:767px){
+
+   .home-text{
+       margin-bottom: 80px;
+   }
+   #proizvodi .promena  h4{
+    font-size: 16px;
+
+ }
+ #servisi .carousel-item p{
+    font-size: 16px;
+}
+#servisi .carousel-item h2{
+    font-size: 24px;
+}
+#servisi .carousel-item .img-area{
+    width: 128px;
+    height: 128px;
+}
+
+}
+@media(max-width:575px){
+
+   .home-text h1{
+      font-size: 30px;
+      padding-top: 21px;
+   }
+   .home-text p{
+      font-size: 16px;
+     padding-top: 21px;
+   }
+   .home .home-btn a{
+       font-size: 11px;
+   }
+   #pregled img{
+       width: 100px;
+       height: 100px;
+   }
+   #pregled p{
+       font-size: 16px;
+   }
+   #proizvodi .promena  h4{
+       font-size: 16px;
+
+    }
+    #proizvodi a > i{
+        font-size: 14px;
+    }
+    #proizvodi a{
+        font-size: 14px;
+    }
+   #dizajn .card-header button{
+      
+       
+       text-align: left;
+       font-size: 13px;
+   }
+  #dizajn .card-body{
+      font-size: 13px;
+      text-align: justify;
+  }
+
+  #sertifikat img{
+      width: 128px;
+      height: 128px;
+  }
+  #pregled h2{
+    font-size: 30px;
+  }
+  #servisi h2{
+      font-size: 30px;
+  }
+  #dizajn h2{
+      font-size: 30px;
+  }
+  #proizvodi h2{
+      font-size: 30px;
+  }
+  #proizvodi h5{
+      font-size: 12px;
+
+  }
+  #privatnost h2{
+      font-size: 30px;
+  }
+  #privatnost p{
+      font-size: 15px;
+  }
+ 
+  #istorija h2{
+      font-size: 30px;
+  }
+  #sertifikat h2{
+      font-size: 30px;
+  }
+
+  #servisi .carousel-item p{
+    font-size: 16px;
+}
+#servisi .carousel-item h2{
+    font-size: 24px;
+}
+#servisi .carousel-item .img-area{
+    width: 128px;
+    height: 128px;
+}
+
+
+}

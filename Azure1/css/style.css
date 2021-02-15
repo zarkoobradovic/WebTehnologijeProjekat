@@ -350,6 +350,9 @@ body.dark{
     color: #fff;
     border-radius: 5%;
 }
+#servisi h2{
+    
+}
 .single-box {
     position: relative;
     margin-bottom: 30px;
@@ -530,7 +533,7 @@ body.dark{
     content: "";
     width: 36.5%;
     height: 2px;
-    background: #c6c6c6;
+    background: var(--body-color);
     margin: auto 0;
     position: absolute;
     top: 0;
@@ -563,12 +566,12 @@ body.dark{
 
 .main-timeline .date-outer:before {
     background: #fff;
-    border: 2px solid #2a5ee8;
+    border: 2px solid var(--color-4);
     left: -6px
 }
 
 .main-timeline .date-outer:after {
-    border: 2px solid #6a89e0;
+    border: 2px solid var(--color-4);
     left: 6px
 }
 
@@ -720,11 +723,20 @@ body.dark{
 #dizajn .card-body{
     background-color: var(--body-color);
 }
+#dizajn .card-header button{
+      
+       
+    text-align: left;
+    font-size: 16px;
+}
 /*==============================Sekcija sertifikati=============================================*/
 
 #sertifikat img{
     width: 200px;
     height: 200px;
+}
+#sertifikat p{
+    font-size: 17px;
 }
 
 
@@ -732,102 +744,14 @@ body.dark{
 
 /*-----------------------Microsoft Azure Privatnost---------------------------*/
 
+#privatnost p{
+    font-size: 18px;
+}
+
 /*----------------------End Microsoft Azure Privatnost---------------------------*/
 
 
-/*=====================================Responsive=================================================*/
 
-@media(max-width:991px){
-    .navbar-toggler{
-        background-color: var(--dark-color);
-      
-        height: 34px;
-        width: 44px;
-        padding: 0;
-        font-size: 17px;
-       color:#000000;
-
-
-    }
-    .navbar-nav{
-        background-color: var(--dark-color);
-
-    }
-    .navbar .nav-item{
-        margin: 0;
-        padding: 5px;
-    }
-    .navbar.navbar-shrink  .navbar-toggler,
-    .navbar.navbar-shrink .navbar-nav{
-        background-color: var(--color-4);
-        color: #fff;
-    }
-    .home-text h1{
-       font-size: 40px;
-
-    }
-}
-@media(max-width:767px){
-
-   .home-text{
-       margin-bottom: 80px;
-   }
-
-}
-@media(max-width:575px){
-
-   .home-text h1{
-      font-size: 30px;
-   }
-   .home-text p{
-      font-size: 16px;
-   }
-   .home .home-btn a{
-       font-size: 11px;
-   }
-   #pregled img{
-       width: 100px;
-       height: 100px;
-   }
-   #pregled p{
-       font-size: 16px;
-   }
-   #dizajn button{
-       font-size: 13px;
-   }
-  #dizajn .card-body{
-      font-size: 13px;
-      text-align: justify;
-  }
-
-  #sertifikat img{
-      width: 128px;
-      height: 128px;
-  }
-  #pregled h2{
-    font-size: 30px;
-  }
-  #servisi h2{
-      font-size: 30px;
-  }
-  #dizajn h2{
-      font-size: 30px;
-  }
-  #proizvodi h2{
-      font-size: 30px;
-
-  }
-  #privatnost h2{
-      font-size: 30px;
-  }
-  #istorija h2{
-      font-size: 30px;
-  }
-  #sertifikat h2{
-      font-size: 30px;
-  }
-
-}
 
 /*---------------------------------------Sekcija Autori-------------------------*/
 .social-link {

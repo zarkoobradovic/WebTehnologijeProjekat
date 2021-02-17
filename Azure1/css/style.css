@@ -17,6 +17,7 @@
     --color-000:#ffffffff;
     --black-alpha-100:rgba(0,0,0,0.05);
     --dark-color:#35363a;
+    --color-footer:#23272a;
 }
 
 body{
@@ -772,4 +773,49 @@ body.dark{
     background: #ddd;
     text-decoration: none;
     color: #555;
+}
+
+/*==========================Footer=====================================*/
+
+#foother{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-footer);
+    padding-top: 80px;
+
+}
+#foother .naslov{
+    font-weight:bold;
+    font-size: 35px;
+    color:#fff;
+}
+#foother .naslov  span{
+    color:var(--color-4);
+}
+#foother hr{
+    border: 1px solid #2a5ee8;
+    
+    
+}
+#foother .licenca{
+    float: right;
+}
+#foother .nav-link{
+    color:#ffffffff;
+}
+#foother .nav-link:hover{
+    text-decoration: underline;
+    
+}
+/*=========================Prevodilac======================================*/
+.translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+
+.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-gadget{
+   color: transparent !important;
 }

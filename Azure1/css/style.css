@@ -6,9 +6,7 @@
 
 :root{
     --body-color: #f8f9fa;
-    --color-1:#e91e63;
-    --color-2:#f5ae10;
-    --color-3:#09d69c;
+    
     --color-4:#2a5ee8;
     --bg-dark:#2b2c2f;
     --black-900:#000000;
@@ -18,6 +16,8 @@
     --black-alpha-100:rgba(0,0,0,0.05);
     --dark-color:#35363a;
     --color-footer:#23272a;
+    --color-card-autor:#ffffff;
+    --color-card-autor-text:#000000;
 }
 
 body{
@@ -32,6 +32,8 @@ body{
 body.dark{
    --body-color:var(--color-400);
     --background-color: var(--black-alpha-100);
+    --color-card-autor:#000000;
+    --color-card-autor-text:#ffffffff;
    --color-000:var(--black-900);
    --black-900:var(--color-000);
    
@@ -774,7 +776,10 @@ body.dark{
     text-decoration: none;
     color: #555;
 }
-
+#autori .bg-color{
+    background-color: var(--color-card-autor);
+    color:var( --color-card-autor-text);
+}
 /*==========================Footer=====================================*/
 
 #foother{

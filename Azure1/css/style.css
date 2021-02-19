@@ -812,6 +812,27 @@ body.dark{
     text-decoration: underline;
     
 }
+/*========================Pomeranje klikom na drugme na vrh strane===============================================*/
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #ffffff; 
+    
+    cursor: pointer;
+  
+    border-radius: 50%; 
+ 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
 /*=========================Prevodilac======================================*/
 .translated-ltr{margin-top:-40px;}
 .translated-ltr{margin-top:-40px;}

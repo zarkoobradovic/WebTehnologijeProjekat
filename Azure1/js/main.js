@@ -78,3 +78,23 @@ $(document).ready(function () {
 });
 
 
+/*========================Pomeranje klikom na drugme na vrh strane===============================================*/
+mybutton = document.getElementById("myBtn");
+//kada se korisnik pomeri za 20px sa vrha stranice poziva se 
+//funkcija za prikaz dugmeta
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Kada korisnik klikne pomera se na vrh stranice
+function topFunction() {
+  document.body.scrollTop = 0; // Za Safari
+  document.documentElement.scrollTop = 0; // Za Chrome, Firefox, IE and Opera
+}
+

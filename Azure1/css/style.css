@@ -703,6 +703,10 @@ body.dark{
         margin-bottom: 10px
     }
 }
+#servisi a{
+    text-decoration: none;
+   color:#fff;
+}
  /*-----------------------End Microsoft Azure Servisi Istorija---------------------------*/
 
 
@@ -845,3 +849,5 @@ body.dark{
 .goog-te-gadget{
    color: transparent !important;
 }
+
+/*ucitavanje veb stranica*/

@@ -63,6 +63,7 @@
    #proizvodi .promena  h4{
     font-size: 16px;
 
+
  }
  #servisi .carousel-item p{
     font-size: 16px;
@@ -129,6 +130,11 @@
   }
   #servisi h2{
       font-size: 30px;
+  }
+  #servisi img{
+      width: 78px;
+      height: 78px;
+
   }
   #dizajn h2{
       font-size: 30px;

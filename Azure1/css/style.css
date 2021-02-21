@@ -190,7 +190,7 @@ body.dark{
     color:var(--black-900);
     margin: 0 0 20px;
 }
-.home-text h1 > span{
+.home-text  h1 > span{
     color:var(--color-4);
 }
 .home-text p{
@@ -201,6 +201,9 @@ body.dark{
 }
 .home .home-btn{
    margin-top:40px;
+}
+h2 > span{
+    color:var(--color-4);
 }
 
 /*dugme za video*/

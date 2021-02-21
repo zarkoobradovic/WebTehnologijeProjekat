@@ -202,6 +202,9 @@ body.dark{
 .home .home-btn{
    margin-top:40px;
 }
+h2 > span{
+    color:var(--color-4);
+}
 
 /*dugme za video*/
 .home .home-btn .video-play-btn{

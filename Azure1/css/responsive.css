@@ -54,6 +54,9 @@
         text-align: left;
         font-size: 16px;
     }
+    #privatnost p{
+        font-size: 16px;
+    }
 }
 @media(max-width:767px){
 
@@ -78,6 +81,7 @@
 #pregled p{
     font-size: 16px;
 }
+
 
 }
 @media(max-width:575px){
@@ -152,6 +156,7 @@
   #privatnost p{
       font-size: 15px;
   }
+ 
  
   #istorija h2{
       font-size: 30px;

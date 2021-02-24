@@ -1,0 +1,856 @@
+
+/*font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --body-color: #f8f9fa;
+    
+    --color-4:#2a5ee8;
+    --bg-dark:#2b2c2f;
+    --black-900:#000000;
+    --color-400:#555555;
+    --color-100:#f7f7f7f7;
+    --color-000:#ffffffff;
+    --black-alpha-100:rgba(0,0,0,0.05);
+    --dark-color:#35363a;
+    --color-footer:#23272a;
+    --color-card-autor:#ffffff;
+    --color-card-autor-text:#000000;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: var(--body-color);
+    line-height: 1.5;
+
+}
+body.dark{
+   --body-color:var(--color-400);
+    --background-color: var(--black-alpha-100);
+    --color-card-autor:#000000;
+    --color-card-autor-text:#ffffffff;
+   --color-000:var(--black-900);
+   --black-900:var(--color-000);
+   
+   --bg-dark:var(--body-color);
+   
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    outline: none i !important;
+}
+@keyframes video_play_aniation{
+    0%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255,255,255,0);
+
+    }
+    100%{
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
+/*animcija da se vrti tockic */
+@keyframes okreci_tockic{
+    0%{
+         transform: rotate(0deg);
+    }
+    100%{
+     transform: rotate(360deg);
+    }
+}
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-wrap .effect-1{
+   left: 20%;
+   top:20%;
+   font-size: 20px;
+   color:var(--color-2);
+   animation: okreci_tockic 5s linear infinite;
+
+}
+.effect-wrap .effect-2{
+    right: 5%;
+    top:10%;
+    font-size: 25px;
+    color:var(--black-900);
+    animation: okreci_tockic 7s linear infinite;
+}
+.effect-wrap .effect-3{
+    left: 5%;
+    bottom:10%;
+    font-size: 25px;
+    color:var(--color-3);
+    animation: okreci_tockic 7s linear infinite;
+}
+.btn-prvo{
+    background-color:var(--color-4);
+    padding: 12px 36px;
+    border: none;
+    border-radius: 36px;
+    color: var(--body-color); 
+    font-size: 16px;
+    text-transform:capitalize ;
+    transform: all 0.5s ease;
+    font-weight: 500;
+  
+}
+
+.btn-prvo:hover{
+    color:var(--black-900);
+    background-color:var(--body-color);
+
+}
+/*Navbar*/
+.navbar{
+    background-color:var(--color-4);
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.navbar-shrink{
+    
+    background-color:var(--color-4);
+    padding: 10px 0;
+}
+.navbar.navbar-shrink .navbar-brand img{
+    width: 43px;
+    height: 43px;
+
+}
+.navbar > .container{
+    padding:0 15px;
+}
+.navbar-brand{
+    font-size: 30px;
+    color:var(--color-000);
+   font-weight: 500;
+    text-transform: capitalize;
+}
+.navbar .nav-item{
+    margin-left: 40px;
+}
+.navbar .nav-item .nav-link{
+  color: var(--color-000);
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0;
+  position: relative;
+}
+/*Za crticu da ispisuje u navbaru sa tranzicijom*/
+.navbar .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    right:0;
+    height: 1px;
+    background-color: var(--color-000);
+    transition: all 0.5s ease;
+    transform: scale(0);
+ 
+}
+.navbar .nav-item .nav-link .active::before{
+   
+    transform: scale(1);
+}
+.navbar .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+
+
+.home{
+    min-height: 100vh;
+    padding: 150px 0;
+    background: var(--body-color);
+    border-radius: 0 0 200px 0;
+    /*kada se podesava tockic*/
+    position: relative;
+    z-index: 1;
+    overflow-x:hidden ;
+   
+}
+.home-text h1{
+    font-size: 45px;
+    font-weight: 700;
+    color:var(--black-900);
+    margin: 0 0 20px;
+}
+.home-text  h1 > span{
+    color:var(--color-4);
+}
+.home-text p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+
+}
+.home .home-btn{
+   margin-top:40px;
+}
+h2 > span{
+    color:var(--color-4);
+}
+
+/*dugme za video*/
+.home .home-btn .video-play-btn{
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    font-size: 16px;
+  animation: video_play_aniation 2s ease infinite;
+
+}
+.home .home-btn .video-play-btn i{
+    line-height: 50px;
+}
+.home .home-btn .video-play-btn:hover{
+    animation: none;
+    box-shadow: var(--black-900);
+}
+.home-img img{
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+ }
+ .home-img{
+     position: relative;
+ }
+ 
+
+ /*light-dark*/
+  .toggle-theme{
+     position:fixed;
+     right: 0;
+     top:50%;
+     height:40px;
+     width: 40px;
+     background-color:#000000;
+     z-index: 1200;
+     color: #ffffffff;
+     cursor: pointer;
+     border-radius: 50%;
+     box-shadow:#ffffffff;
+     font-size:16px;
+     text-align: center;
+ }
+ .toggle-theme i{
+  line-height: 40px;
+
+ }
+
+ /*video
+ */
+ .video-popup{
+     padding: 30px;
+     position: fixed;
+     left:0;
+     top:0;
+     width: 100%;
+     height: 100%;
+     z-index: 1999;
+     background-color: rgba(0,0,0,0.7);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity:0;
+     visibility: hidden;
+     transition: all 0.5s ease;
+
+ }
+ .video-popup.open{
+     opacity: 1;
+     visibility: visible;
+ }
+ .video-popup-inner{
+     width: 100%;
+     max-width: 900px;
+     background-color: red;
+     position: relative;
+
+ }
+ .video-popup .video-popup-close{
+     position: absolute;
+     right: 0;
+     top:-30px;
+     height: 30px;
+     width: 30px;
+     background-color: red;
+     font-size:16px;
+     text-align: center;
+     line-height: 30px;
+     cursor: pointer;
+     color:#ffffffff;
+
+
+ }
+ .video-popup .iframe-box{
+     height: 0;
+     overflow-x:hidden;
+     padding-top: 56.25%;
+
+ }
+ .video-popup #player-1{
+     position:absolute;
+     left: 0;
+     top:0;
+     width: 100%;
+     height: 100%;
+     border:0;
+
+ }
+
+
+ /*
+ 
+ */
+.section-padding{
+    padding: 100px 0;
+
+}
+.section-title{
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 40px;
+    color:var(--black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.section-title h2 >spna{
+    color: var(--color-4);
+}
+.features a{
+    background-color: var(--color-4);
+}
+.features p{
+    min-height: 120px;
+   
+}
+
+
+/*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
+.img-text{
+    width: 100%;
+    height: 400px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #2a5ee8;
+    color: #fff;
+    border-radius: 5%;
+}
+#servisi h2{
+    
+}
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+.img-area {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    
+    overflow: hidden;
+    top: 15px;
+    left: 34%;
+    border-radius: 0%;
+}
+.img-area img {
+    width: 90%;
+    margin-top: 18%;
+}
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -30px;
+}
+.carousel-indicators li {
+    background: #657ec2;
+    border-radius: 15%;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active {
+    background: #2a5ee8;
+}
+/*-------------------------------End Microsoft Azure Servisi Sekcija---------------------------------------*/
+
+/*
+=====================================Sekcija proizvodi i resenja================================================
+*/
+#proizvodi .list-group .list-group-item{
+    background-color:var(--body-color);
+    color: var(--black-900);
+    margin-bottom: 10px;
+    width: 100%;
+}
+#proizvodi .promena  h4{
+    font-weight: 700;
+
+}
+#proizvodi .promena  span{
+    color:#2a5ee8;
+    
+}
+#proizvodi .card{
+    width: 100%;
+    background-color:var(--color-000);
+    
+    margin-top: 10px;
+}
+
+#proizvodi  .card button{
+    float: left;
+    font-size: 16px;
+    margin-top: 0;
+    position: relative;
+    left:24px;
+    top:2px;
+    font-weight: 900;
+    color:var(--black-900);
+}
+
+
+@media (max-width: 992px) { 
+    #proizvodi .promena{
+        display: none;
+        
+    }
+    #proizvodi  h5{
+        font-size:16px
+
+    }
+    #proizvodi h4{
+        font-weight: 700;
+        
+    }
+    #proizvodi span{
+        
+        color:var(--color-4);
+
+    }
+ }
+/* =============================Kraj sekcije proizvodi i resenja===================================================*/
+
+
+
+ /*-----------------------Microsoft Azure Servisi Sekcija---------------------------*/
+ body{
+    margin-top:20px;
+}
+
+.main-timeline {
+    position: relative
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #c6c6c6;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: var(--body-color);
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #fff;
+    border: 2px solid var(--color-4);
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid var(--color-4);
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
+#servisi a{
+    text-decoration: none;
+   color:#fff;
+}
+ /*-----------------------End Microsoft Azure Servisi Istorija---------------------------*/
+
+
+
+ /*===============================Sekcija dizajn==============================*/
+ #dizajn h3{
+     
+     font-size: 20px;
+     font-weight:500;
+ }
+ #dizajn .card-header{
+     background-color:var(--body-color);
+ }
+ #dizajn .card-header button{
+     color:var(--black-900);
+ }
+
+#dizajn .card{
+    border: none;
+   
+}
+#dizajn .card-body{
+    background-color: var(--body-color);
+}
+#dizajn .card-header button{
+      
+       
+    text-align: left;
+    font-size: 16px;
+}
+/*==============================Sekcija sertifikati=============================================*/
+
+#sertifikat img{
+    width: 200px;
+    height: 200px;
+}
+#sertifikat p{
+    font-size: 17px;
+}
+
+
+
+
+/*-----------------------Microsoft Azure Privatnost---------------------------*/
+
+#privatnost p{
+    font-size: 18px;
+}
+
+/*----------------------End Microsoft Azure Privatnost---------------------------*/
+
+
+
+
+/*---------------------------------------Sekcija Autori-------------------------*/
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+#autori .bg-color{
+    background-color: var(--color-card-autor);
+    color:var( --color-card-autor-text);
+}
+/*==========================Footer=====================================*/
+
+#foother{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-footer);
+    padding-top: 80px;
+
+}
+#foother .naslov{
+    font-weight:bold;
+    font-size: 35px;
+    color:#fff;
+}
+#foother .naslov  span{
+    color:var(--color-4);
+}
+#foother hr{
+    border: 1px solid #2a5ee8;
+    
+    
+}
+#foother .licenca{
+    float: right;
+}
+#foother .nav-link{
+    color:#ffffffff;
+}
+#foother .nav-link:hover{
+    text-decoration: underline;
+    
+}
+/*========================Pomeranje klikom na drugme na vrh strane===============================================*/
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #ffffff; 
+    
+    cursor: pointer;
+  
+    border-radius: 50%; 
+ 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+/*=========================Prevodilac======================================*/
+.translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+
+.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-gadget{
+   color: transparent !important;
+}
+
+/*ucitavanje veb stranica*/
